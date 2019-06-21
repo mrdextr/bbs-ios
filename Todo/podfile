@@ -1,0 +1,4 @@
+target 'Todo' do
+	pod 'FloatingPanel'
+end
+
