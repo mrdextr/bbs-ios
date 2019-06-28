@@ -8,13 +8,13 @@
 
 import Foundation
 import UIKit
-import FloatingPanel
+import FloatingPanel //
 
 extension AddController: UITextFieldDelegate {
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
         if let panel = self.navigationController?.parent as? FloatingPanelController {
-            
+            panel.move(to: .full, animated: true) //
         }
     }
     
@@ -29,8 +29,9 @@ extension AddController: UITextFieldDelegate {
             panel.move(to: .half, animated: true)
         }
         
-        
+        textfield.resignFirstResponder() //
         
         return true
     }
 }
+

@@ -35,9 +35,13 @@ class ListController: UIViewController {
         self.tableView.delegate = self
         self.tableView.dataSource = self
         
-        self.imageView.image = UIImage(named: "Finish")
+        self.imageView.image = UIImage(named: "Finish")?.inTint(.bbsLightGrey) //
         self.descriptionLabel.textColor = .bbsLightGrey
         self.descriptionLabel.text = "WOHOOO! No more Todos!"
+        
+        let button = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(self.add(_:))) //
+        button.tintColor = .bbsBlue //
+        self.navigationItem.setRightBarButton(button, animated: false) //
         
         NotificationCenter.default.addObserver(forName: .reloadTodos, object: nil, queue: .main) { [weak self] _ in
             self?.refresh()
@@ -67,7 +71,15 @@ class ListController: UIViewController {
         self.persistancy.load(done: false) { [weak self] todos in
             self?.todos = todos
             
+            if todos.count > 0 { //
+                self?.emptyView.isHidden = true //
+            } else {
+                self?.emptyView.isHidden = false //
+            } //
         }
     }
-
+    
+    @objc func add(_ sender: UIBarButtonItem) { //
+        self.showPanel() //
+    } //
 }

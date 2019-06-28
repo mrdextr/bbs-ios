@@ -28,10 +28,11 @@ struct PersistanceManager {
     func load(done: Bool, _ closure: ([Todo]) -> Void) {
         
         let todos = self.load()
-        closure(
-            done
-            ? todos.checked
-            : todos.unchecked
+        
+        closure(                //
+            done                //
+          ? todos.checked       //
+          : todos.unchecked     //
         )
     }
     
@@ -40,15 +41,16 @@ struct PersistanceManager {
         
         let index = todos.index(for: object)
         todos[index].done = done
-
+        
+        self.save(todos) //
         
         NotificationCenter.default.post(name: .reloadTodos, object: nil)
     }
     
     func add(_ todo: Todo) {
         var todos = self.load()
-        
-        
+        todos.append(todo) //
+        self.save(todos) //
         
         NotificationCenter.default.post(name: .reloadTodos, object: nil)
     }

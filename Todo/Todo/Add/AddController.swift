@@ -27,16 +27,20 @@ class AddController: UIViewController {
         self.navigationItem.setRightBarButton(done, animated: false)
         self.navigationItem.setLeftBarButton(cancel, animated: false)
         
+        self.textfield.delegate = self //
+        self.textfield.tintColor = .bbsBlue //
         self.textfield.returnKeyType = .done
     }
     
     @objc func cancel(_ sender: UIBarButtonItem) {
-        
+        self.dismiss(animated: true, completion: nil) //
     }
     
     @objc func finished(_ sender: UIBarButtonItem) {
         if let text = self.textfield.text {
+            self.delegate?.addNew(text) //
+            
         }
+        self.dismiss(animated: true, completion: nil) //
     }
 }
-

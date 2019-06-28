@@ -12,7 +12,7 @@ import UIKit
 extension UIColor {
     
     static var bbsBlue: UIColor {
-        return UIColor(named: "bbsDarkGrey")!
+        return UIColor(named: "bbsBlue")! //
     }
     
     static var bbsWhite: UIColor {

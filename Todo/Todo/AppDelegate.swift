@@ -17,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         UINavigationBar.appearance().titleTextAttributes = [.foregroundColor : UIColor.bbsBlue]
+        UITabBar.appearance().tintColor = .bbsBlue //
         
         let persinstancy = PersistanceManager()
         persinstancy.save(Todo.mockData)

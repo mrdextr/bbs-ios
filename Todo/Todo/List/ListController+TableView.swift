@@ -25,7 +25,7 @@ extension ListController: UITableViewDelegate, UITableViewDataSource  {
         let cell = tableView.cellForRow(at: indexPath) as! TodoCell
         
         cell.setChecked()
-        
+        cell.scale(with: 0.1, scale: 0.99) //
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) { [weak self] in
             

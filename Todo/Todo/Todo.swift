@@ -13,7 +13,9 @@ struct Todo: Equatable, Codable {
     let title: String
     
     static var mockData: [Todo] = Todo.mock()
-
+    static var unchecked: [Todo] = Todo.mockData.filter { !$0.done }
+    static var checked: [Todo] = Todo.mockData.filter { $0.done }
+    
     private static func mock() -> [Todo] {
         return [
             Todo(done: false, title: "Drink Water"),

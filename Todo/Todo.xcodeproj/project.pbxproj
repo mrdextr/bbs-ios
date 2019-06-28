@@ -14,8 +14,8 @@
 		6480127222BD6A0F00832154 /* ListController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6480127122BD6A0F00832154 /* ListController+TableView.swift */; };
 		6480127422BD6A4300832154 /* ListController+Panel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6480127322BD6A4300832154 /* ListController+Panel.swift */; };
 		6480127622BD6E5700832154 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6480127522BD6E5700832154 /* Assets.xcassets */; };
-		6480127822BD777500832154 /* DoneController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6480127722BD777500832154 /* DoneController+TableView.swift */; };
-		6480127C22BD80AA00832154 /* AddController+Textfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6480127B22BD80AA00832154 /* AddController+Textfield.swift */; };
+		6480127A22BD779500832154 /* DoneController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6480127922BD779500832154 /* DoneController+TableView.swift */; };
+		6480127E22BD80C200832154 /* AddController+Textfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6480127D22BD80C200832154 /* AddController+Textfield.swift */; };
 		64A873B622BD4CB3001112DA /* UIStoryboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A873B522BD4CB3001112DA /* UIStoryboard+Extension.swift */; };
 		64A873B822BD516D001112DA /* PersistanceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A873B722BD516D001112DA /* PersistanceManager.swift */; };
 		64A873BA22BD548C001112DA /* NotificationName+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A873B922BD548C001112DA /* NotificationName+Extension.swift */; };
@@ -45,8 +45,8 @@
 		6480127122BD6A0F00832154 /* ListController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ListController+TableView.swift"; sourceTree = "<group>"; };
 		6480127322BD6A4300832154 /* ListController+Panel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ListController+Panel.swift"; sourceTree = "<group>"; };
 		6480127522BD6E5700832154 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6480127722BD777500832154 /* DoneController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DoneController+TableView.swift"; sourceTree = "<group>"; };
-		6480127B22BD80AA00832154 /* AddController+Textfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddController+Textfield.swift"; sourceTree = "<group>"; };
+		6480127922BD779500832154 /* DoneController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DoneController+TableView.swift"; sourceTree = "<group>"; };
+		6480127D22BD80C200832154 /* AddController+Textfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddController+Textfield.swift"; sourceTree = "<group>"; };
 		64A873B522BD4CB3001112DA /* UIStoryboard+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extension.swift"; sourceTree = "<group>"; };
 		64A873B722BD516D001112DA /* PersistanceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceManager.swift; sourceTree = "<group>"; };
 		64A873B922BD548C001112DA /* NotificationName+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationName+Extension.swift"; sourceTree = "<group>"; };
@@ -112,7 +112,7 @@
 			children = (
 				644CC2DF22BC3D0400054B2E /* AddController.storyboard */,
 				64C05C8D22BD2B3000208A4E /* AddController.swift */,
-				6480127B22BD80AA00832154 /* AddController+Textfield.swift */,
+				6480127D22BD80C200832154 /* AddController+Textfield.swift */,
 			);
 			path = Add;
 			sourceTree = "<group>";
@@ -188,7 +188,7 @@
 			children = (
 				64C05C8522BD11C500208A4E /* DoneController.storyboard */,
 				64C05C8722BD11CF00208A4E /* DoneController.swift */,
-				6480127722BD777500832154 /* DoneController+TableView.swift */,
+				6480127922BD779500832154 /* DoneController+TableView.swift */,
 			);
 			path = Done;
 			sourceTree = "<group>";
@@ -311,8 +311,8 @@
 				64A873B622BD4CB3001112DA /* UIStoryboard+Extension.swift in Sources */,
 				64C05C8122BD031500208A4E /* CellConfigurable.swift in Sources */,
 				64C05C8322BD0A5100208A4E /* UIView+Extension.swift in Sources */,
-				6480127822BD777500832154 /* DoneController+TableView.swift in Sources */,
-				6480127C22BD80AA00832154 /* AddController+Textfield.swift in Sources */,
+				6480127A22BD779500832154 /* DoneController+TableView.swift in Sources */,
+				6480127E22BD80C200832154 /* AddController+Textfield.swift in Sources */,
 				644CC2E222BC3E3500054B2E /* Todo.swift in Sources */,
 				64C05C8822BD11CF00208A4E /* DoneController.swift in Sources */,
 				64A873BA22BD548C001112DA /* NotificationName+Extension.swift in Sources */,
